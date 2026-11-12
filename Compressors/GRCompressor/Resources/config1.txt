@@ -1,0 +1,24 @@
+[External compressor:precomp]
+header = 0
+packcmd   = precomp -slow {options} -o$$arcpackedfile$$.tmp  $$arcdatafile$$.tmp
+unpackcmd = precomp -o$$arcdatafile$$.tmp -r $$arcpackedfile$$.tmp
+
+[External compressor:srep]
+header = 0
+packcmd   = srep {options} -m5f $$arcdatafile$$.tmp $$arcpackedfile$$.tmp
+unpackcmd = srep {options} -d -s - - <stdin> <stdout>
+
+[External compressor:lzma]
+
+header = 0
+
+packcmd   = lzma e lzma{:option} <stdin> <stdout>
+unpackcmd = lzma d lzma{:option} <stdin> <stdout>
+
+[External compressor:msc_frog]
+header = 0
+packcmd   = msc c -v -f -wav=1 -raw=1 -bmp=1 -ddsraw=1 -ddsdxt=1 -mp3=1 -bmf=9s -frog=9 -dxt=1 -lzma=hc4,lc8,lp2,pb2,fb273,mc1000 $$arcdatafile$$.tmp $$arcpackedfile$$.tmp
+
+[External compressor:msc_tak]
+header = 0
+packcmd   = msc c -v -f -wav=1 -raw=1 -bmp=1 -ddsraw=1 -ddsdxt=1 -mp3=1 -bmf=9s -tak=9 -dxt=1 -lzma=hc4,lc8,lp2,pb2,fb273,mc1000 $$arcdatafile$$.tmp $$arcpackedfile$$.tmp

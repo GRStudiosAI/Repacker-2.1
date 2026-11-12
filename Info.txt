@@ -1,0 +1,27 @@
+Repacker By GR Studios AI v2.1 
+Extras 
+License Information
+
+Inno Setup is licensed under the MIT.
+Copyright (c)  1997-2018 Jordan Russell. All rights reserved.
+Portions Copyright (c)  2000-2018 Martijn Laan. All rights reserved.
+
+QuickSFV is licensed under the MIT.
+Copyright (c) 2008 quicksfv@hotmail.com
+
+Notpade++ is licensed under the MIT.
+Copyright (c) 2020 Don HO <don.h@free.fr>
+Copyright (c) 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. https://fsf.org/
+https://npp-user-manual.org/docs/license/
+https://notepad-plus-plus.org/author/
+
+1. User Agreement
+
+1.1 donationware
+
+This program is donationware. That means, you
+can copy it as often as you want and give
+it to any persons you'd like to.
+
+BUT: You are not allowed to sell, rent, or 
+change the code to this application!!
